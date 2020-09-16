@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+#site_wrap{
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 
+        1fr
+        repeat(4,minmax(0,300px))
+        1fr
+    ;
+    grid-gap: 0px;
+    grid-template-rows: 
+        36px
+        6px
+        95px
+        457px
+        105px
+        692px
+        1fr
+    ;
+    grid-template-areas: 
+        "header header header header header header"
+        "lineBar lineBar lineBar lineBar lineBar lineBar"
+        "nav nav nav nav nav nav"
+        ". main main main main ."
+        "fullTextBar fullTextBar fullTextBar fullTextBar fullTextBar fullTextBar"
+        ". halfImageBox halfImageBox halfTextBox halfTextBox ."
+        "footer footer footer footer footer footer"
+
+
+    ;
+}
+
+.header{
+    background-color: #336699;
+    grid-area: header;
+}
+.lineBar{
+    background-color: yellow;
+    grid-area: lineBar;
+}
+.nav{
+    background-color: pink;
+    grid-area: nav;
+}
+.main{
+    background-color: green;
+    grid-area: main;
+}
+.fullTextBar{
+    background-color: blueviolet;
+    grid-area: fullTextBar;
+}
+.halfImageBox{
+    background-color: green;
+    grid-area: halfImageBox;
+}
+.halfTextBox{
+    background-color: red;
+    grid-area: halfTextBox;
+}
+.footer{
+    background-color: grey;
+    grid-area: footer;
+}
