@@ -318,7 +318,7 @@ hr.footer-line-hidden{
         3px
         min-content
         105px
-        max-content
+        minmax(600px, auto)
         1fr
     ;
     }
@@ -341,7 +341,7 @@ hr.footer-line-hidden{
         3px
         min-content
         105px
-        max-content
+        minmax(300px, auto)
         1fr
     ;
     }
@@ -376,7 +376,7 @@ hr.footer-line-hidden{
         3px
         min-content
         105px
-        max-content
+        minmax(300px, auto)
         1fr
     ;
     }
