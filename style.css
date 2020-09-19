@@ -15,7 +15,7 @@ body{
     ;
     grid-gap: 0px;
     grid-template-rows: 
-        36px
+        30px
         3px
         min-content
         105px
@@ -35,7 +35,8 @@ body{
 }
 
 .header{
-    background-color: #336699;
+    /*background-color: #336699;*/
+    background-color: #0959a8;
     grid-area: header;
 }
 .header .text-bar{
@@ -43,7 +44,7 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 0px;
     justify-content: space-evenly;
 }
 .header .text-bar .phone{
@@ -317,7 +318,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        36px
+        30px
         3px
         min-content
         105px
@@ -341,7 +342,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        36px
+        30px
         3px
         min-content
         105px
@@ -355,6 +356,14 @@ body{
     }
 }
 @media only screen and (max-width: 750px ){
+    .header .text-bar .phone h1{
+        font-size: 0.5em;
+        padding-top: 5px;
+    }
+    .header .text-bar .phone a{
+        font-size: 0.5em;
+        padding-top: 5px;
+    }
     .nav .nav-items{
         font-size: 1.75vw;
     }
@@ -377,7 +386,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        36px
+        30px
         3px
         min-content
         105px
@@ -389,5 +398,8 @@ body{
     .nav-logo{
         height: 60px;
         top: -25px;
+    }
+    body{
+        background-attachment: scroll;
     }
 }
