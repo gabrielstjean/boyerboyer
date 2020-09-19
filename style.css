@@ -422,7 +422,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        30px
+        28px
         2px
         950px
         105px
@@ -448,8 +448,8 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        30px
-        3px
+        25px
+        2px
         800px
         105px
         minmax(450px, auto)
@@ -466,7 +466,7 @@ body{
 @media only screen and (max-width: 750px ){
     .header .text-bar .phone h1{
         font-size: 0.5em;
-        padding-top: 5px;
+        padding-top: 2px;
     }
     .header .text-bar .phone a{
         font-size: 0.5em;
@@ -499,8 +499,8 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        30px
-        3px
+        20px
+        2px
         550px
         90px
         minmax(350px, auto)
