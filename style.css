@@ -21,6 +21,8 @@ body{
         105px
         max-content/*593px*/
         min-content
+        min-content
+        min-content
         1fr
     ;
     grid-template-areas: 
@@ -29,6 +31,8 @@ body{
         "main main main main main main"
         "fullTextBar fullTextBar fullTextBar fullTextBar fullTextBar fullTextBar"
         ". halfImageBox halfImageBox halfTextBox halfTextBox ."
+        "fullTextBarB fullTextBarB fullTextBarB fullTextBarB fullTextBarB fullTextBarB"
+        "container container container container container container"
         "mapedge map map map map edge"
         "mapedge footer footer footer footer edge"
     ;
@@ -172,7 +176,8 @@ body{
 }
 .fullTextBar{
     display: flex;
-    background-color: #4875b9;
+    /*background-color: #4875b9;*/
+    background-image: linear-gradient(to right, #86b7ff, #0b52bd);
     grid-area: fullTextBar;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -185,6 +190,41 @@ body{
     font-size: 2.75vw;
     font-weight: 100;
     font-style: oblique;
+}
+.fullTextBarB{
+    display: flex;
+    /*background-color: #4875b9;*/
+    background-color: black;
+    grid-area: fullTextBarB;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fullTextBarB .textBarItemB{
+    align-items: center;
+    text-align: center;
+    width: auto;
+    min-width: 20%;
+    font-size: 2.75vw;
+    font-weight: 900;
+}
+.fullTextBarB h1{
+    color: rgb(253, 122, 0);
+    border-style: solid solid solid solid;
+    padding: 10px;
+}
+.fullTextBarB h2{
+    color: rgb(0, 183, 255);
+    border-style: solid solid solid solid;
+    padding: 10px;
+}
+.fullTextBarB h3{
+    color: rgb(255, 0, 128);
+    border-style: solid solid solid solid;
+    padding: 10px;
 }
 .halfImageBox{
     background-color: lightgray;
@@ -313,11 +353,60 @@ body{
     padding-top: 10px;
     padding-left: 10px;
 }
+.container{
+    grid-area: container;
+    background-image: url(background_squares.png);
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container-items{
+    max-width: 60%;
+    text-align: center;
+}
+.container-items li{
+    padding-bottom: 15px;
+    line-height: 1.2em;
+} 
+.container-items h1{
+    font-size: 3em;
+}
+.container-items p{
+    font-size: 1.5em;
+    color: rgb(75, 74, 74);
+}
+.container-items .container-list{
+    text-align: left;
+    font-size: 1em;
+    color: rgb(116, 116, 116);
+    line-height: 2em;
+}
+.container-list .no-bullet{
+    list-style: none;
+}
+.container .learn-more{
+    color: rgb(0, 110, 255);
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+}
 @media only screen and (max-width: 1200px ){
     .header .text-bar .phone{
         padding-right: 10px;
     }
     .nav .nav-items{
+        padding-right: 10px;
+    }
+    .nav .nav-items-right{
         padding-right: 10px;
     }
     .halfTextBox h1{
@@ -338,6 +427,8 @@ body{
         950px
         105px
         minmax(600px,auto)
+        min-content
+        min-content
         min-content
         1fr
     ;
@@ -362,6 +453,8 @@ body{
         800px
         105px
         minmax(450px, auto)
+        min-content
+        min-content
         min-content
         1fr
     ;
@@ -397,7 +490,6 @@ body{
     .halfTextBox h1{
         font-size: 1.3em;
         font-weight: 200;
-        padding-top: 30px;
     }
     .halfTextBox p{
         font-size: 2vw;
@@ -412,6 +504,8 @@ body{
         550px
         90px
         minmax(350px, auto)
+        min-content
+        min-content
         min-content
         1fr
     ;
