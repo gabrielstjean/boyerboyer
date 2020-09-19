@@ -16,8 +16,8 @@ body{
     grid-gap: 0px;
     grid-template-rows: 
         30px
-        3px
-        min-content
+        2px
+        950px
         105px
         max-content/*593px*/
         min-content
@@ -65,8 +65,8 @@ body{
     border: 1px solid rgb(194, 194, 194);
     height: 20px;
     width: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .lineBar{
     background-image: linear-gradient(to right,#cea622 15% , #eddfb4 20%, #cea622 25%, #cea622 75%, #eddfb4 80%, #cea622 85%);
@@ -78,17 +78,27 @@ body{
     list-style: none;
     align-items: center;
     flex-basis: 1200px;
+    height: 30px;
 }
 .nav .nav-items{
+    flex: 1;
     flex-flow: wrap;
     padding: 0;
     margin: 0;
+}
+.nav .nav-items-right{
+    flex: 1;
+    flex-flow: wrap;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 0.9em;
 }
 .nav .nav-items-a a:hover{
     border-style: none;
 }
 .nav .nav-items-space{
-    width: 100px;
+    width: 200px;
     flex-flow: wrap;
 }
 .nav a{
@@ -106,9 +116,9 @@ body{
 }
 .nav-logo{
     flex-flow: wrap;
-    height: 80px;
+    height: 30px;
     position: relative;
-    top: -30px;
+    top: 0px;
 }
 .main{
     background-color: black;
@@ -123,6 +133,7 @@ body{
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .main .main-wrapper{
     display: flex;
@@ -276,6 +287,7 @@ body{
     justify-content: left;
     font-size: 12px;
     padding-bottom: 15px;
+    padding-left: 10px;
     color: rgb(179, 179, 179);
     flex-wrap: wrap;
 }
@@ -319,10 +331,10 @@ body{
     #site_wrap{
         grid-template-rows: 
         30px
-        3px
-        min-content
+        2px
+        950px
         105px
-        minmax(600px, auto)
+        minmax(600px,auto)
         min-content
         1fr
     ;
@@ -344,7 +356,7 @@ body{
         grid-template-rows: 
         30px
         3px
-        min-content
+        800px
         105px
         minmax(450px, auto)
         min-content
@@ -367,8 +379,14 @@ body{
     .nav .nav-items{
         font-size: 1.75vw;
     }
+    .nav .nav-items-right{
+        font-size: 1.75vw;
+    }
     .nav .nav-items-a{
         font-size: 1.75vw;
+    }
+    .nav .nav-items-a img{
+        height: 2vw;
     }
     .fullTextBar .textBarItem{
         font-size: 3.5vw;
@@ -388,18 +406,14 @@ body{
         grid-template-rows: 
         30px
         3px
-        min-content
-        105px
+        500px
+        90px
         minmax(300px, auto)
         min-content
         1fr
     ;
     }
     .nav-logo{
-        height: 60px;
-        top: -25px;
-    }
-    body{
-        background-attachment: scroll;
+        height: 20px;
     }
 }
