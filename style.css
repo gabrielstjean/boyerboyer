@@ -167,6 +167,9 @@ body{
     height: auto;
     width: auto\9; /* ie8 */
 }
+.logo-image{
+    padding-left: 40px;
+}
 .fullTextBar{
     display: flex;
     background-color: #4875b9;
@@ -406,9 +409,9 @@ body{
         grid-template-rows: 
         30px
         3px
-        500px
+        550px
         90px
-        minmax(300px, auto)
+        minmax(350px, auto)
         min-content
         1fr
     ;
