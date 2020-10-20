@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'd-dindin-bold';
+    src: url('d-din-bold-webfont.woff2') format('woff2'),
+         url('d-din-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-dindin-italic';
+    src: url('d-din-italic-webfont.woff2') format('woff2'),
+         url('d-din-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-dinregular';
+    src: url('d-din-webfont.woff2') format('woff2'),
+         url('d-din-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-din_condenseddinCnBd';
+    src: url('d-dincondensed-bold-webfont.woff2') format('woff2'),
+         url('d-dincondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-din_condensedregular';
+    src: url('d-dincondensed-webfont.woff2') format('woff2'),
+         url('d-dincondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-din_expdinexp-bold';
+    src: url('d-dinexp-bold-webfont.woff2') format('woff2'),
+         url('d-dinexp-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-din_expdinexp-italic';
+    src: url('d-dinexp-italic-webfont.woff2') format('woff2'),
+         url('d-dinexp-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'd-din_expregular';
+    src: url('d-dinexp-webfont.woff2') format('woff2'),
+         url('d-dinexp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-family: 'd-dinregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;  
+}
+#contact-wrapper{
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 
+        1fr
+        repeat(4,minmax(0,300px))
+        1fr
+    ;
+    grid-gap: 0px;
+    grid-template-rows: 
+        70px
+        2px
+        min-content
+        min-content
+        1fr
+    ;
+    grid-template-areas: 
+        "header header header header header header"
+        "lineBar lineBar lineBar lineBar lineBar lineBar"
+        ". main main main main ."
+        "mapedge map map map map edge"
+        "mapedge footer footer footer footer edge"
+    ;
+}
+.header{
+    background-color: #0959a8;
+    grid-area: header;
+}
+.header .text-bar{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-style: italic;
+}
+.header .text-bar .hire{
+    text-align: center;
+    padding: 0;
+    font-size: 3em;
+    color: white;
+}
+.header .text-bar .hire a{
+    color: white;
+    text-decoration: none;
+}
+.header .text-bar .hire a:hover{
+    color: rgb(180, 180, 180);
+}
+.lineBar{
+    background-color: white;
+    grid-area: lineBar;
+    height: 2px;
+}
+.main{
+    background-image: linear-gradient(to right, rgb(214, 214, 214), white);
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30;
+    margin: 0;
+}
+.main .main-content{
+    width: 1200px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.main .main-content h1{
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+.main .main-content p{
+    font-size: 2em;
+    color: rgb(65, 65, 65);
+}
+.main .main-content a{
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(0, 132, 255);
+}
+.main .main-content a:hover{
+    font-size: 2em;
+    color: rgb(46, 154, 255);
+}
+.mapedge{
+    grid-area: mapedge;
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+.edge{
+    grid-area: edge;
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    width: auto;
+}
+.map{
+    grid-area: map;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    flex-basis: 1200px;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    align-items: center;
+}
+.map .list-main{
+    align-items: center;
+    list-style: none;
+    line-height: 1em;
+    text-align: left;
+    padding-inline-start: 10px;
+    padding-right: 15px;
+}
+.map h1{
+    color: rgb(128, 128, 128);
+    font-size: 1em;
+}
+.map a{
+    text-decoration: none;
+    color: rgb(0, 131, 207);
+    font-size: 1em;
+}
+.map a:hover{
+    color: rgb(0, 162, 255);
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+.footer-line{
+    padding: 0;
+    border-style: none none solid none;
+    border-width: 1.5px;
+    border-color: rgb(201, 201, 201);
+    width: 100%;
+}
+.footer{
+    background-color: rgb(230, 230, 230);
+    grid-area: footer;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    font-size: 1em;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    color: rgb(117, 117, 117);
+    flex-wrap: wrap;
+    flex-basis: 1200px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(0, 131, 207);
+}
+.footer a:hover{
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+}
+.footer-contact{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.footer-copyright{
+    padding-top: 10px;
+}
+.footer-items{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(230, 230, 230);
+}

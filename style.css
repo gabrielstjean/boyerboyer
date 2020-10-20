@@ -82,7 +82,7 @@ body{
     ;
     grid-gap: 0px;
     grid-template-rows: 
-        30px
+        70px
         2px
         950px
         105px
@@ -116,7 +116,23 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 0px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-style: italic;
+}
+.header .text-bar .hire{
+    text-align: center;
+    padding: 0;
+    font-size: 3em;
+    color: white;
+}
+.header .text-bar .hire a{
+    color: white;
+    text-decoration: none;
+}
+.header .text-bar .hire a:hover{
+    color: rgb(180, 180, 180);
 }
 .header .text-bar .phone{
     text-align: right;
@@ -140,7 +156,8 @@ body{
     margin-right: 20px;
 }
 .lineBar{
-    background-image: linear-gradient(to right,#cea622 15% , #eddfb4 20%, #cea622 25%, #cea622 75%, #eddfb4 80%, #cea622 85%);
+    /*background-image: linear-gradient(to right,#cea622 15% , #eddfb4 20%, #cea622 25%, #cea622 75%, #eddfb4 80%, #cea622 85%);*/
+    background-color: white;
     grid-area: lineBar;
 }
 .nav{
@@ -192,7 +209,7 @@ body{
     top: 0px;
 }
 .main{
-    background-color: black;
+    /*background-color: black;*/
     background-image: url(background_main01.png);
     background-size: cover;
     /*min-height: 998px;*/
@@ -371,12 +388,15 @@ body{
 }
 .map h1{
     color: rgb(128, 128, 128);
-    font-size: 0.7em;
+    font-size: 1em;
 }
 .map a{
     text-decoration: none;
-    color: rgb(179, 179, 179);
-    font-size: 0.7em;
+    color: rgb(0, 131, 207);
+    font-size: 1em;
+}
+.map a:hover{
+    color: rgb(0, 162, 255);
 }
 .break{
     flex-basis: 100%;
@@ -396,19 +416,19 @@ body{
     margin: 0;
     padding: 0;
     justify-content: left;
-    font-size: 12px;
+    font-size: 1em;
     padding-bottom: 15px;
     padding-left: 10px;
-    color: rgb(179, 179, 179);
+    color: rgb(117, 117, 117);
     flex-wrap: wrap;
 }
 .footer a{
     text-decoration: none;
-    color: rgb(179, 179, 179);
+    color: rgb(0, 131, 207);
 }
 .footer a:hover{
     text-decoration: none;
-    color: rgb(207, 207, 207);
+    color: rgb(0, 162, 255);
 }
 .footer-contact{
     padding-bottom: 10px;
@@ -468,15 +488,6 @@ body{
     padding-top: 10px;
 }
 @media only screen and (max-width: 1200px ){
-    .header .text-bar .phone{
-        padding-right: 10px;
-    }
-    .nav .nav-items{
-        padding-right: 10px;
-    }
-    .nav .nav-items-right{
-        padding-right: 10px;
-    }
     .halfTextBox h1{
         font-size: 3.5em;
         font-weight: 200;
@@ -490,7 +501,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        28px
+        70px
         2px
         950px
         105px
@@ -503,9 +514,6 @@ body{
     }
 }
 @media only screen and (max-width: 1100px ){
-    .nav .nav-items-space{
-        width: auto;
-    }
     .halfTextBox p{
         font-size: 2vw;
     }
@@ -516,7 +524,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        25px
+        70px
         2px
         800px
         105px
@@ -532,25 +540,11 @@ body{
     }
 }
 @media only screen and (max-width: 750px ){
+    .header .text-bar .hire{
+        font-size: 2em;
+    }
     .header .text-bar .phone h1{
         font-size: 0.5em;
-        padding-top: 2px;
-    }
-    .header .text-bar .phone a{
-        font-size: 0.5em;
-        padding-top: 5px;
-    }
-    .nav .nav-items{
-        font-size: 1.75vw;
-    }
-    .nav .nav-items-right{
-        font-size: 1.75vw;
-    }
-    .nav .nav-items-a{
-        font-size: 1.75vw;
-    }
-    .nav .nav-items-a img{
-        height: 2vw;
     }
     .fullTextBar .textBarItem{
         font-size: 3.5vw;
@@ -567,7 +561,7 @@ body{
     }
     #site_wrap{
         grid-template-rows: 
-        20px
+        70px
         2px
         550px
         90px
